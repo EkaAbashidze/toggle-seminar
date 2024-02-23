@@ -1,10 +1,13 @@
 import React, { useState } from "react";
-import Container from "./Components/Container";
-import Toggle from "./Components/Toggle";
 import styled from "styled-components";
 import "./App.css";
+import data from "./data.json";
 
 function App() {
+  console.log(data[0]);
+
+
+
   const basic = {
     title: "Basic",
     price: { monthly: "19.99", yearly: "199.99" },
@@ -12,6 +15,7 @@ function App() {
     users: "2 Users Allowed",
     send: "Send up to 3 GB",
   };
+
   const professional = {
     title: "Professional",
     price: { monthly: "24.99", yearly: "249.99" },
@@ -19,6 +23,7 @@ function App() {
     users: "5 Users Allowed",
     send: "Send up to 10 GB",
   };
+
   const master = {
     title: "Master",
     price: { monthly: "39.99", yearly: "239.99" },
